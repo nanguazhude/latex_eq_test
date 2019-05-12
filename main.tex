@@ -85,7 +85,7 @@ urlcolor=colortextthisproject
 ]{hyperref}
 
 \usepackage{fontspec}
-\definecolor{sourcegrayone}{rgb}{0.99,0.99,0.99}  %源代码背景颜色
+\definecolor{sourcegrayone}{rgb}{0.90,0.90,0.91}  %源代码背景颜色
 \newfontfamily\sourcefontone{Consolas}            %源代码字体
 \newfontfamily\sourcefontthree{DejaVu Sans Mono}  %源代码字体
 %sudo apt-get install ttf-mscorefonts-installer   %linux安装字体
@@ -291,9 +291,27 @@ urlcolor=colortextthisproject
     \chapter{公式测试}
     \section{测试一}
     
-    \begin{tcolorbox} \noindent\begin{equation*}
-a + b = 2\end{equation*}\end{tcolorbox}
+    %cd /D C:\texlive\2018\bin\win32
+    %texdoc tcolorbox
     
+    {
+ 
+    
+    \begin{tcolorbox}[arc=0pt ,
+    	boxsep=0mm ,
+    	top=1pt,
+    	bottom=1pt , 
+    	colback=sourcegrayone,
+    	colframe=sourcegrayone   ]\noindent\begin{equation*}
+a + b = 2\end{equation*}\end{tcolorbox}
+	}
+    
+    {
+    	\tcbset{ arc=0mm    }
+    	
+    	\begin{tcolorbox}\noindent\begin{equation*}
+    		a + b = 2\end{equation*}\end{tcolorbox}
+    }
     
 	
 	\backmatter
