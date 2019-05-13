@@ -256,6 +256,10 @@ urlcolor=colortextthisproject
 \newcommand{\cppVersion}{17}
 
 \usepackage{tcolorbox}
+%设置公式计数器
+\newcommand\fileequalnumberone{公式}
+\newcounter{fileequalnumber}[section]
+\renewcommand\thefileequalnumber{\thesection.\arabic{fileequalnumber}}
 
 \begin{document}
 	
@@ -296,13 +300,15 @@ urlcolor=colortextthisproject
     
     {
  
-    
-    \begin{tcolorbox}[arc=0pt ,
+ 	 
+     \centerline{\noindent\fileequalnumberone\ \ref{xxxewxxx}}  
+      \begin{tcolorbox}[arc=0pt ,
     	boxsep=0mm ,
     	top=1pt,
     	bottom=1pt , 
     	colback=sourcegrayone,
-    	colframe=sourcegrayone   ]\noindent\begin{equation*}
+    	colframe=sourcegrayone   
+    	] \refstepcounter{fileequalnumber}\label{xxxewxxx} \noindent\begin{equation*}
 a + b = 2\end{equation*}\end{tcolorbox}
 	}
     
@@ -313,6 +319,7 @@ a + b = 2\end{equation*}\end{tcolorbox}
     		a + b = 2\end{equation*}\end{tcolorbox}
     }
     
+ 
 	
 	\backmatter
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
