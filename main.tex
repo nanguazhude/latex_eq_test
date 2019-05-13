@@ -257,7 +257,7 @@ urlcolor=colortextthisproject
 
 \usepackage{tcolorbox}
 %设置公式计数器
-\newcommand\fileequalnumberone{公式}
+\newcommand\fileequalnumbernameone{公式}
 \newcounter{fileequalnumber}[section]
 \renewcommand\thefileequalnumber{\thesection.\arabic{fileequalnumber}}
 
@@ -301,7 +301,7 @@ urlcolor=colortextthisproject
     {
  
  	 
-     \centerline{\noindent\fileequalnumberone\ \ref{xxxewxxx}}  
+     \centerline{\noindent\fileequalnumbernameone\ \ref{xxxewxxx}}  
       \begin{tcolorbox}[arc=0pt ,
     	boxsep=0mm ,
     	top=1pt,
@@ -309,8 +309,32 @@ urlcolor=colortextthisproject
     	colback=sourcegrayone,
     	colframe=sourcegrayone   
     	] \refstepcounter{fileequalnumber}\label{xxxewxxx} \noindent\begin{equation*}
-a + b = 2\end{equation*}\end{tcolorbox}
-	}
+a + b = 2
+\end{equation*}%
+%
+ 
+\end{tcolorbox} 
+%\marginpar[\hfill\setlength\fboxsep{2pt}\fbox{\footnotesize{\kaishu\parbox{1em}{\setlength{\baselineskip}{2pt}\commandnumbernameone}}\footnotesize{\thecommandnumber}}]{\setlength\fboxsep{2pt}\fbox{\footnotesize{\kaishu\parbox{1em}{\setlength{\baselineskip}{2pt}\commandnumbernameone}}\footnotesize{\thecommandnumber}}}
+\marginpar[yyy]{xxx} 
+	
+}
+
+
+
+
+   {
+	
+	
+	\centerline{\noindent\fileequalnumbernameone\ \ref{xxxewxxx1}}  
+	\begin{tcolorbox}[arc=0pt ,
+		boxsep=0mm ,
+		top=1pt,
+		bottom=1pt , 
+		colback=sourcegrayone,
+		colframe=sourcegrayone   
+		] \refstepcounter{fileequalnumber}\label{xxxewxxx1} \noindent\begin{equation*}
+		a + b = 2\end{equation*}\end{tcolorbox}
+}
     
     {
     	\tcbset{ arc=0mm    }
