@@ -298,26 +298,43 @@ urlcolor=colortextthisproject
     %cd /D C:\texlive\2018\bin\win32
     %texdoc tcolorbox
     
-    {
- 
+     
+ %\protect{\marginpar[yyy]{xxx}} 
  	 
      \centerline{\noindent\fileequalnumbernameone\ \ref{xxxewxxx}}  
-      \begin{tcolorbox}[arc=0pt ,
+     \begin{tcolorbox}[arc=0pt ,
     	boxsep=0mm ,
     	top=1pt,
     	bottom=1pt , 
+    	left=0pt,
+    	right=0pt,
+    	leftrule=0pt,
+    	rightrule=0pt,
     	colback=sourcegrayone,
     	colframe=sourcegrayone   
-    	] \refstepcounter{fileequalnumber}\label{xxxewxxx} \noindent\begin{equation*}
-a + b = 2
-\end{equation*}%
-%
- 
+    	] \refstepcounter{fileequalnumber}\label{xxxewxxx}  \noindent\begin{equation*}
+a + b = 2     \marginnote[l]{r} \end{equation*} 
 \end{tcolorbox} 
+
+
+  \noindent{aaa}
+  \begin{tcolorbox}[arc=0pt ,
+	boxsep=0mm ,
+	top=1pt,
+	bottom=1pt , 
+	colback=sourcegrayone,
+	colframe=sourcegrayone   
+	] \noindent{aaa}   \marginnote[l]{r} 
+\end{tcolorbox} 
+
+\marginnote{\noindent{xxx}} 
+ 
+% \marginpar[yyy]{xxx}
 %\marginpar[\hfill\setlength\fboxsep{2pt}\fbox{\footnotesize{\kaishu\parbox{1em}{\setlength{\baselineskip}{2pt}\commandnumbernameone}}\footnotesize{\thecommandnumber}}]{\setlength\fboxsep{2pt}\fbox{\footnotesize{\kaishu\parbox{1em}{\setlength{\baselineskip}{2pt}\commandnumbernameone}}\footnotesize{\thecommandnumber}}}
-\marginpar[yyy]{xxx} 
+
 	
-}
+
+
 
 
 
